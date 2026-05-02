@@ -1,13 +1,13 @@
 tmp() {
   if [ -z "$1" ]; then
-    echo "Usage: tmp <filename>"
+    echo "usage: tmp <filename>"
     return 1
   fi
 
   local filename="$1.cpp"
 
   if [ -e "$filename" ]; then
-    echo "File already exists: $filename"
+    echo "file already exists: $filename"
     return 1
   fi
 
